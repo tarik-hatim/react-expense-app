@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Should render expense item with expense 1`] = `
+exports[`Should render an expense item 1`] = `
 <div>
   <Link
     to="/edit/1"
@@ -10,7 +10,7 @@ exports[`Should render expense item with expense 1`] = `
     </h3>
   </Link>
   <p>
-    195
+    18000
      - 
     0
   </p>

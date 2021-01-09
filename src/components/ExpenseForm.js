@@ -2,6 +2,9 @@ import React from 'react';
 import 'react-dates/initialize';
 import moment from 'moment';
 import { SingleDatePicker } from 'react-dates';
+// import {apiService} from '../api/apiService';
+// console.log(apiService);
+
 
 const now = moment();
 now.locale('fr', {
@@ -75,6 +78,7 @@ export default class ExpenseForm extends React.Component{
         createdAt: this.props.expense ? moment(this.props.expense.createdAt) : moment(),
         focused: false,
         error: ''
+        
     }
 
     onDescriptionChange = (e)=> {
@@ -116,7 +120,8 @@ export default class ExpenseForm extends React.Component{
            this.props.onSubmit({
                 description : this.state.description,
                 amount: parseFloat(this.state.amount,10) * 100,
-                createdAt : this.state.createdAt.valueOf()
+                createdAt : this.state.createdAt.valueOf(),
+                note: this.state.note
            });
        }
         

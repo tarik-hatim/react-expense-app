@@ -1,15 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Should render expense list with expenses 1`] = `
+exports[`Should render expense list with provided expenses 1`] = `
 <div>
   <p>
     expense List 
   </p>
-  <p>
-    3
-  </p>
   <ExpenseItem
-    amount={195}
+    amount={18000}
     createdAt={0}
     description="Gum"
     id="1"
@@ -17,20 +14,31 @@ exports[`Should render expense list with expenses 1`] = `
     note=""
   />
   <ExpenseItem
-    amount={109500}
-    createdAt={-345600000}
+    amount={50000}
+    createdAt={-259200000}
     description="Rent"
     id="2"
     key="2"
     note=""
   />
   <ExpenseItem
-    amount={4500}
+    amount={19000}
     createdAt={345600000}
-    description="Credit Card"
+    description="Car Credit"
     id="3"
     key="3"
     note=""
   />
+</div>
+`;
+
+exports[`Should render without expense list 1`] = `
+<div>
+  <p>
+    expense List 
+  </p>
+  <p>
+    no expenses
+  </p>
 </div>
 `;

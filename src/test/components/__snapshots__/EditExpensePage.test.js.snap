@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Should render Edit page correctly 1`] = `
+exports[`Should render Edit expense page correctly 1`] = `
 <div>
   <h2>
     Edit Expense Page
@@ -8,7 +8,7 @@ exports[`Should render Edit page correctly 1`] = `
   <ExpenseForm
     expense={
       Object {
-        "amount": 195,
+        "amount": 18000,
         "createdAt": 0,
         "description": "Gum",
         "id": "1",

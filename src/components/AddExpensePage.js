@@ -17,7 +17,6 @@ import { addExpense} from '../actions/expenses';
     </div>
     )
   }
-    
 }
 
 const mapDispatchToProps = dispatch =>  {

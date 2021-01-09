@@ -6,10 +6,11 @@ import visibleExpenses from '../selectors/expenses';
 export const ExpenseList = (props) => (
     <div>
         <p>expense List </p>
-        <p>{props.expenses.length}</p>
-        
-        {props.expenses.map((expense) => 
-            <ExpenseItem  {...expense} key={expense.id} /> )}
+        {props.expenses.length === 0 ? (
+            <p>no expenses</p>
+        ): (
+            props.expenses.map((expense) => 
+            <ExpenseItem  {...expense} key={expense.id} /> ))}
     </div>
 );
 
@@ -20,5 +21,3 @@ const mapStateToProps = (state) => (
 );
 
 export default connect(mapStateToProps)(ExpenseList);
-
-//export default ExpenseList;
