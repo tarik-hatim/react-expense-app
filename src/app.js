@@ -11,12 +11,14 @@ import './styles/style.scss';
 import 'react-dates/lib/css/_datepicker.css';
 import './firebase/firebase';
 
-
+if (process.env.NODE_ENV !== 'production') {
+    console.log('Looks like we are in development mode!');
+  }
 //import ParamsExample from './components/ParamExample';
 
 const store = configureStore();
 
-
+console.log('testffff');
 const jsx = (
     <Provider store={store}>
         <Routes />
